@@ -1,10 +1,20 @@
-﻿Module ConvertandValidate
+﻿'Malachi Marlow
+'Spring 2025
+'RCET2265
+'Convert and Validate
+'https://github.com/MalachiMarlow/Convert-and-Validate.git
+
+Option Compare Text
+Option Explicit On
+Option Strict On
+
+Module ConvertandValidate
 
     Sub Main()
         'for testing the function add this to your Sub Main()
 
         Dim aValidNumber As Integer
-        Dim usernResponse As Integer
+        Dim usernResponse As String
 
         Do
 
@@ -29,9 +39,9 @@
     'make this work
 
 
-    Function ConversionValid(convertThisString, toThisInteger) As Boolean
+    Function ConversionValid(convertThisString As String, ByRef toThisInteger As Integer) As Boolean
 
-        Dim status As Boolean
+        Dim status As Boolean = False
 
         Try
 
