@@ -40,11 +40,11 @@ Module ConvertandValidate
 
 
     Function ConversionValid(convertThisString As String, ByRef toThisInteger As Integer) As Boolean
-
-        Dim status As Boolean = False
+        Dim status As Boolean
 
         Try
-
+            toThisInteger = CInt(convertThisString)
+            status = True
         Catch ex As Exception
 
         End Try
